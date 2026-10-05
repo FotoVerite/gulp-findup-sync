@@ -82,7 +82,7 @@ function findFile(cwd, filename, options) {
 function tryReaddirSync(fp) {
   try {
     return fs.readdirSync(fp);
-  } catch (err) {
+  } catch {
     // Ignore error
   }
   /* istanbul ignore next */
